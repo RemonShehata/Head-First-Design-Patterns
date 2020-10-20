@@ -1,6 +1,6 @@
 public abstract class Duck {
 
-    void quck() {
+    void quack() {
         System.out.println("Duck is quacking");
     }
 
@@ -9,4 +9,8 @@ public abstract class Duck {
     }
 
     abstract void display();
+
+    void fly() {
+        System.out.println("Duck is flying");
+    }
 }
