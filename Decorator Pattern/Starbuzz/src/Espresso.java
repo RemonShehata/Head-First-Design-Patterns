@@ -1,6 +1,6 @@
-public class Espresso extends Beverage{
+public class Espresso extends Beverage {
     @Override
     float getCost() {
-        return 0;
+        return super.getCost() + 40;
     }
 }

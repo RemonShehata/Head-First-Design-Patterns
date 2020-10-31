@@ -1,6 +1,6 @@
-public class Decaf extends Beverage{
+public class Decaf extends Beverage {
     @Override
     float getCost() {
-        return 0;
+        return super.getCost() + 30;
     }
 }

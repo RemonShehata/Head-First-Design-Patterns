@@ -1,6 +1,6 @@
-public class DarkRoast extends Beverage{
+public class DarkRoast extends Beverage {
     @Override
     float getCost() {
-        return 0;
+        return super.getCost() + 20;
     }
 }
