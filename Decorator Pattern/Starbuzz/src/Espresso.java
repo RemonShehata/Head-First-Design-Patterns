@@ -1,6 +1,11 @@
 public class Espresso extends Beverage {
+
+    public Espresso(){
+        description = "Espresso";
+    }
+
     @Override
-    float getCost() {
-        return super.getCost() + 40;
+    public double getCost() {
+        return 1.99;
     }
 }

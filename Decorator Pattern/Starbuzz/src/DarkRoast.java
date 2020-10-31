@@ -1,6 +1,11 @@
 public class DarkRoast extends Beverage {
+
+    public DarkRoast(){
+        description = "DarkRoast";
+    }
+
     @Override
-    float getCost() {
-        return super.getCost() + 20;
+    public double getCost() {
+        return 0.99;
     }
 }

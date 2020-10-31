@@ -1,6 +1,11 @@
 public class HouseBlend extends Beverage {
+
+    public HouseBlend(){
+        description = "House Blend Coffee";
+    }
+
     @Override
-    float getCost() {
-        return super.getCost() + 10;
+    public double getCost() {
+        return 0.89;
     }
 }

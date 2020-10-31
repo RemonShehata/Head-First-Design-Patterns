@@ -1,6 +1,11 @@
 public class Decaf extends Beverage {
+
+    public Decaf(){
+        description = "Decaf";
+    }
+
     @Override
-    float getCost() {
-        return super.getCost() + 30;
+    public double getCost() {
+        return 1.05;
     }
 }
