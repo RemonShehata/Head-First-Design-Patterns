@@ -14,8 +14,13 @@ public class StarbuzzCoffee {
         beverage2 = new Soy(beverage2);
         beverage2 = new Mocha(beverage2);
         beverage2 = new Whip(beverage2);
-        beverage2.getDescription();
         System.out.println(beverage2.getDescription() + " $" + beverage2.getCost());
+
+        Beverage beverage3 = new Decaf();
+        beverage3.setSize(Beverage.Size.grande);
+        beverage3 = new Soy(beverage3);
+        System.out.println(beverage3.getDescription() + " $" + beverage3.getCost());
+
 
     }
 }

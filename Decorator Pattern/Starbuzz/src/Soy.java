@@ -12,6 +12,16 @@ public class Soy extends CondimentDecorator {
 
     @Override
     public double getCost() {
-        return 0.15 + beverage.getCost();
+        double cost = beverage.getCost();
+        Beverage.Size size = beverage.getSize();
+        if (size == Size.tall) {
+            cost += 0.10;
+        } else if (size == Size.grande) {
+            cost += 0.15;
+        } else if (size == Size.venti) {
+            cost += 0.20;
+        }
+
+        return cost;
     }
 }
