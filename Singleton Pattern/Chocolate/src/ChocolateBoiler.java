@@ -1,12 +1,9 @@
 public class ChocolateBoiler {
-    private static ChocolateBoiler instance;
+    private static ChocolateBoiler instance = new ChocolateBoiler();
     private boolean empty;
     private boolean boiled;
 
     public ChocolateBoiler getInstance() {
-        if (instance == null) {
-            instance = new ChocolateBoiler();
-        }
         return instance;
     }
 
