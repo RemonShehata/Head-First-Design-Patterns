@@ -1,8 +1,16 @@
 public class ChocolateBoiler {
+    private static ChocolateBoiler instance;
     private boolean empty;
     private boolean boiled;
 
-    public ChocolateBoiler() {
+    public ChocolateBoiler getInstance() {
+        if (instance == null) {
+            instance = new ChocolateBoiler();
+        }
+        return instance;
+    }
+
+    private ChocolateBoiler() {
         empty = true;
         boiled = false;
     }
